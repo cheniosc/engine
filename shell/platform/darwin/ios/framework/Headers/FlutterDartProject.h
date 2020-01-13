@@ -23,6 +23,12 @@ FLUTTER_EXPORT
 - (instancetype)initWithPrecompiledDartBundle:(nullable NSBundle*)bundle NS_DESIGNATED_INITIALIZER;
 
 /**
+ * Initializes with a specific set of Flutter Assets.
+ */
+- (instancetype)initWithFlutterAssetsURL:(NSURL*)flutterAssetsURL NS_DESIGNATED_INITIALIZER;
+
+
+/**
  * Unavailable - use `init` instead.
  */
 - (instancetype)initFromDefaultSourceForConfiguration FLUTTER_UNAVAILABLE("Use -init instead.");
